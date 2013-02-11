@@ -1,6 +1,6 @@
 function paint() {
     alert("ff")
-        console.log("effffffff");
+        console.log("QQQ");
     console.log("ew");
     console.log("we");
     var f = null;

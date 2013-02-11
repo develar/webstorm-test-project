@@ -1,0 +1,8 @@
+{
+"version":3,
+"file":"hello-compiled.js",
+"lineCount":1,
+"mappings":"AACAA,QAASA,MAAK,CAACC,CAAD,CAAW,CACvBC,KAAA,CAAM,SAAN,CAAkBD,CAAlB,CADuB;",
+"sources":["hello.js"],
+"names":["hello","longName","alert"]
+}

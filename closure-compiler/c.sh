@@ -1,0 +1,1 @@
+closure-compiler  --create_source_map '%outname%.map'  --compilation_level SIMPLE_OPTIMIZATIONS  --js hello.js --js_output_file hello-compiled.js

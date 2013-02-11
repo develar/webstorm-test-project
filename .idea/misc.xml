@@ -13,9 +13,6 @@
     <ConfirmationsSetting value="0" id="Add" />
     <ConfirmationsSetting value="0" id="Remove" />
   </component>
-  <component name="ProjectResources">
-    <default-html-doctype>$APPLICATION_HOME_DIR$/lib/webide.jar!/resources/html5-schema/html5.rnc</default-html-doctype>
-  </component>
   <component name="ProjectRootManager" version="2" />
   <component name="RunManager">
     <list size="0" />

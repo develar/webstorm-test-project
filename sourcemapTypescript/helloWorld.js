@@ -10,8 +10,12 @@ var Greeter = (function () {
 var greeter = new Greeter("world");
 var button = document.createElement('button');
 button.innerText = "Say Hello";
-button.onclick = function () {
-    alert(greeter.greet());
-};
+function boo(a, b) {
+    alert(a);
+}
+function update() {
+    boo(greeter.greet(), greeter.greet());
+}
+button.onclick = update;
 document.body.appendChild(button);
 //@ sourceMappingURL=helloWorld.js.map
