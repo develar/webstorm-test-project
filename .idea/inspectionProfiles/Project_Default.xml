@@ -44,6 +44,14 @@
       <option name="processLiterals" value="true" />
       <option name="processComments" value="true" />
     </inspection_tool>
+    <inspection_tool class="TaskInspection" enabled="true" level="INFO" enabled_by_default="true">
+      <option name="suppressedTasks">
+        <set>
+          <option value="Closure Compiler" />
+          <option value="YUI Compressor JS" />
+        </set>
+      </option>
+    </inspection_tool>
     <inspection_tool class="UnnecessarilyQualifiedStaticUsage" enabled="true" level="WARNING" enabled_by_default="true">
       <option name="m_ignoreStaticFieldAccesses" value="false" />
       <option name="m_ignoreStaticMethodCalls" value="false" />
