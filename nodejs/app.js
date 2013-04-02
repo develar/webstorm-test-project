@@ -7,3 +7,4 @@ var i = 3;
 console.log('i=', i);
 
 console.log('end of script');
+
