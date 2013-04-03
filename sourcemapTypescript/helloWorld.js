@@ -18,4 +18,3 @@ function update() {
 }
 button.onclick = update;
 document.body.appendChild(button);
-//@ sourceMappingURL=helloWorld.js.map

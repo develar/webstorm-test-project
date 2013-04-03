@@ -5,6 +5,7 @@ try {
     var stack = null;
     try {
       const dummyObject = {};
+      Error.stackTraceLimit = 10;
       Error.prepareStackTrace = function (dummyObject, stackTrace) {
         return stackTrace;
       };
@@ -19,13 +20,18 @@ try {
     var filename;
     for (var i = 0, n = stack.length; i < n; i++) {
       var frame = stack[i];
+      console.log(frame);
       if (!frame.isNative() && (filename = frame.getFileName())) {
         break;
       }
     }
 
+    if (filename.indexOf('/') === -1 || filename.indexOf('\\')) {
+      return false;
+    }
+
     if (!filename) {
-      console.error("cannot determinate script filename");
+      console.error("Cannot determinate script filename");
       return false;
     }
 
@@ -42,13 +48,13 @@ try {
       const buffer = new Buffer(end - start);
       var count = 0;
       while (count < buffer.length) {
-        var bytesRead = fs.readSync(fd, buffer, count, buffer.length - count, start + count);
+        const bytesRead = fs.readSync(fd, buffer, count, buffer.length - count, start + count);
         if (bytesRead <= 0) {
           break;
         }
         count += bytesRead;
       }
-      return new RegExp("[\r\n]//@[ \t]sourceMappingURL=[ \t]*([^\r\n]*)\\s*(?:\\*/\\s)?$").test(buffer.toString());
+      return buffer.toString().lastIndexOf('sourceMappingURL=') != -1;
     }
     finally {
       fs.close(fd, function () {
@@ -58,5 +64,3 @@ try {
 } catch (e) {
   console.error(e);
 }
-
-//@ sourceMappingURL=Fifo.map
