@@ -6,7 +6,7 @@
       </sourceFilesUrls>
     </properties>
     <CLASSES>
-      <root url="file://$PROJECT_DIR$/sourcemapTypescript/7001/tsserver.js" />
+      <root url="file://$PROJECT_DIR$/sourcemap/typescript/7001/tsserver.js" />
     </CLASSES>
     <SOURCES />
   </library>
