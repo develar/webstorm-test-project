@@ -13,17 +13,8 @@ function test() {
 
 function testSetValue() {
   var foo = "test";
-
-  function bar() {
-    var s = "v";
-    function inner() {
-      console(s)
-    }
-    inner();
-  }
-  bar();
-
-  console.log(foo);
+  var bar = {v: 12};
+  console.log(foo, bar);
 }
 
 function testVariablesPresentation() {
@@ -58,6 +49,7 @@ function testFunctionScopes() {
     }
   }
   var c = new Circle(10);
+  var bar = 55;
   console.log(c.getRadiusSquared());
  }
 
