@@ -13,8 +13,16 @@ function test() {
 
 function testSetValue() {
   var foo = "test";
-  var bar = {v: 12};
-  console.log(foo, bar);
+  var bar = {v: foo};
+  var foo2 = {
+    get test() {
+      return foo;
+    },
+    set test(v) {
+      foo = 33;
+    }
+  };
+  console.log(foo);
 }
 
 function testVariablesPresentation() {
@@ -56,6 +64,8 @@ function testFunctionScopes() {
 try {
   exports.test = test;
   exports.testVariablesPresentation = testVariablesPresentation;
+  exports.testSetValue = testSetValue;
+  exports.testFunctionScopes = testFunctionScopes;
 }
 catch (e) {
 }

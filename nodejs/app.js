@@ -1,7 +1,6 @@
 var test = require('../js/test');
 
-var ff = process
-
-test.test();
+//test.test();
+//test.testSetValue();
 //test.testVariablesPresentation();
-//test.testVariablesPresentation();
+test.testVariablesPresentation();
