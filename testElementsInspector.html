@@ -2,27 +2,33 @@
 <head>
   <!-- test closing tag -->
   <link rel="license" href="http://creativecommons.org/licenses/by/1.0"/>
-  <p></p>
 </head>
-<body><p id="p2">Hello world!</p>
+<body>
+<p id="p2">Hello world!<a href="" draggable>sfdsadf</a>wfeqwefw</p>
 
-<script>
+<div id="container"></div>
+<label>
+  Input:
+  <input id="input" type="button"/>
+</label>
+<br/>
+<button onclick="updateStyleColor()">updateStyleColor</button>
+<br/>
+<button onclick="addAttribute()">add attribute</button>
+<br/>
+<button onclick="removeTypeAttribute()">remove attribute</button>
+<br/>
+<button onclick="updateTextContent()">updateTextContent innerHTML</button>
+<br/>
+<button onclick="updateTextContent2()">updateTextContent2</button>
+<br/>
 
-  function get_random_color() {
-    var letters = '0123456789ABCDEF'.split('');
-    var color = '#';
-    for (var i = 0; i < 6; i++) {
-      color += letters[Math.round(Math.random() * 15)];
-    }
-    return color;
-  }
+<button onclick="updateTextContent3()">updateTextContent3</button>
+<br/>
 
-  function extracted() {
-    document.getElementById("p2").style.color = get_random_color();
-  }
-</script>
+<button onclick="writeInInteration()">writeInInteration</button>
+<br/>
 
-<button onclick="extracted()">modify</button>
-
+<script src="js/testElementsInspector.js"></script>
 </body>
 </html>
