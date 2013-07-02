@@ -1,0 +1,7 @@
+<component name="ProjectRunConfigurationManager">
+  <configuration default="false" name="test.html (chrome)" type="JavascriptDebugType" factoryName="JavaScript Debug" uri="http://localhost:8080/webstorm-test-project/test.html">
+    <RunnerSettings RunnerId="JavascriptDebugRunner" />
+    <ConfigurationWrapper RunnerId="JavascriptDebugRunner" />
+    <method />
+  </configuration>
+</component>
