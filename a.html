@@ -6,12 +6,12 @@
 <div id="res"></div>
 
 <script>
+  var foo = {id: "foo"};
+  var map = {'foo': foo};
   function run() {
-    var node = document.createTextNode("Sample text");
-    var br = document.createElement('br');
-
-    document.getElementById('res').appendChild(node);
-    document.getElementById('res').appendChild(br);
+    if (map.foo == foo) {
+      console.log(1);
+    }
   }
 </script>
 </body>

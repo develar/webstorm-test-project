@@ -1,9 +1,5 @@
-(function (exports, require, module, __filename, __dirname) { (function() {
-  var cnt = 1;
+var foo = {id: "Debugger: Node.js: Variables: String id values of the Object type are truncatedDebugger: Node.js: Variables: String id values of the Object type are truncatedDebugger: Node.js: Variables: String id values of the Object type are truncatedDebugger: Node.js: Variables: String id values of the Object type are truncated"};
+if (foo == 3) {
 
-  setInterval(function () {
-    console.log("#" + cnt + " Hello! from " + process.pid);
-    cnt++;
-  }, 2000);
-})();
-});
+}
+var n = foo;
