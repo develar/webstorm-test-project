@@ -1,6 +1,14 @@
 <component name="libraryTable">
   <library name="Generated files" type="javaScript">
+    <properties>
+      <sourceFilesUrls>
+        <item url="file://$PROJECT_DIR$/sourcemap/typescript/ts_debug/raytracer.js" />
+        <item url="file://$PROJECT_DIR$/sourcemap/typescript/ts_debug/Main.js" />
+      </sourceFilesUrls>
+    </properties>
     <CLASSES>
+      <root url="file://$PROJECT_DIR$/sourcemap/typescript/ts_debug/raytracer.js" />
+      <root url="file://$PROJECT_DIR$/sourcemap/typescript/ts_debug/Main.js" />
       <root url="file://$PROJECT_DIR$/sourcemap/typescript/7001/tsserver.js" />
     </CLASSES>
     <SOURCES />

@@ -1,3 +1,11 @@
+function stepping() {
+  var x = [1, 2, 3, 4, 5];
+  x.forEach(function (v) {
+    console.log(v)
+  });
+  console.log('done')
+}
+
 function test() {
   var foo = {
     get test() {
@@ -22,7 +30,6 @@ function testSetValue() {
       foo = 33;
     }
   };
-
 
   var d = foo2;
   console.log(foo);

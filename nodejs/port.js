@@ -1,24 +1,33 @@
-var net = require('net');
+console.log("Start");
+console.log("Middle");
+var f = 5;
+console.log("End");      //breakpoint
 
-var sourceport = 80;
-var destport = 8080;
 
-net.createServer(function(s)
-{
-  var buff = "";
-  var connected = false;
-  var cli = net.createConnection(destport);
-  s.on('data', function(d) {
-    if (connected)
-    {
-      cli.write(d);
-    } else {
-      buff += d.toString();
-    }
-  });
-  cli.on('connect', function() {
-    connected = true;
-    cli.write(buff);
-  });
-  cli.pipe(s);
-}).listen(sourceport);
+map = {
+  '123prop': {
+    '456': 'string'
+  }
+};
+
+var map2 = {
+  '123prop': {
+    '456': 'string'
+  }
+};
+
+function test(data) {
+  var local = 12;
+  console.log(data, local);
+}
+
+test({
+  '123prop': {
+    '456': 'string'
+  }
+});
+
+map["123prop"]["456"] = "23423";
+
+test();
+console.log(32);

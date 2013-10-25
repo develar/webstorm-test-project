@@ -1,0 +1,20 @@
+@import "bold.css";
+
+p {
+  margin: 4px;
+  font-size: 16px;
+  font-weight: bolder;
+  cursor: pointer;
+}
+
+.blue {
+  color: blue;
+}
+
+.highlight {
+  background: #ffdf12;
+}
+
+.myFont {
+  font-style: italic;
+}
