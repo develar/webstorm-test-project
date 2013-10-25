@@ -144,3 +144,7 @@ function paint() {
   console.log("ew");
   console.log("we");
 }
+
+function testConsole() {
+  console.log("a", "b");
+}
