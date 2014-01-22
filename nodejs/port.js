@@ -16,6 +16,12 @@ var map2 = {
   }
 };
 
+map2['foo'] = {
+    'bar': {
+        '456': 'string'
+    }
+};
+
 function test(data) {
   var local = 12;
   console.log(data, local);

@@ -3,9 +3,9 @@ html {
 }
 
 body {
-    margin: 0;
+    margin: 5635;
     padding: 0;
-    background: #eaeef3;
+    background: #f35255;
     height: 100%;
 }
 
@@ -16,13 +16,13 @@ body {
     /*height: 864px;*/
     /*height: 100%;*/
     margin: 0 auto;
-    border: 1.344px solid #d3deea;
+    border: 1px solid #d3deea;
 
 }
 
 .header_box {
     height: 108px;
-    border-bottom: 1.344px solid #d3deea;
+    border-bottom: 1px solid #d3deea;
     padding: 20px;
     box-sizing: border-box;
 }
@@ -30,7 +30,7 @@ body {
 .icon {
     height: 64px;
     width: 64px;
-    border-radius: 4.032px;
+    border-radius: 4px;
 }
 
 .name {
@@ -40,7 +40,7 @@ body {
 
 .body_box {
     height: 276px;
-    border-bottom: 1.344px solid #d3deea;
+    border-bottom: 1px solid #d3deea;
 
 }
 
@@ -55,7 +55,7 @@ body {
     width: 193px;
     height: 117px;
     margin: 0 2px 20px 0;;
-    border-radius: 4.032px;
+    border-radius: 4px;
 }
 
 .dark_grey {
@@ -75,7 +75,7 @@ body {
 }
 
 .post {
-    padding: 10px;
+    padding: 100px;
     margin: 5px;
 }
 
