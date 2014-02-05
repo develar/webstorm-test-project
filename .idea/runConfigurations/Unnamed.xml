@@ -1,6 +1,0 @@
-<component name="ProjectRunConfigurationManager">
-  <configuration default="false" name="Unnamed" type="NodeJSConfigurationType" factoryName="Node.js" path-to-node="/usr/local/bin/node" path-to-js-file="issues/10359.js" working-dir="$PROJECT_DIR$">
-    <browser start="true" with-js-debugger="true" />
-    <method />
-  </configuration>
-</component>
