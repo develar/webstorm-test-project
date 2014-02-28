@@ -1,6 +1,6 @@
 function get_random_color() {
   var letters = '0123456789ABCDEF'.split('');
-  var color = '#';
+  var color = '0x000000';
   for (var i = 0; i < 6; i++) {
     color += letters[Math.round(Math.random() * 15)];
   }

@@ -147,4 +147,7 @@ function paint() {
 
 function testConsole() {
   console.log("a", "b");
+  console.log("da", "b");
+  console.log("da", "b");
+  console.log("q", "bd");
 }
