@@ -1,12 +1,12 @@
 <component name="libraryTable">
-  <library name="Generated files" type="javaScript">
+  <library name="bower" type="javaScript">
     <properties>
       <sourceFilesUrls>
-        <item url="file://$PROJECT_DIR$/issues/10829.js" />
+        <item url="file://$PROJECT_DIR$/bower_components" />
       </sourceFilesUrls>
     </properties>
     <CLASSES>
-      <root url="file://$PROJECT_DIR$/issues/10829.js" />
+      <root url="file://$PROJECT_DIR$/bower_components" />
     </CLASSES>
     <SOURCES />
   </library>
