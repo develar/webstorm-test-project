@@ -58,6 +58,8 @@ function testVariablesPresentation() {
 
   var longString = "This affects any Node.js project;\n it's not particular to Jade.  It makes debugging a real pain.  Only workaround I've found is to bring up the eval window and do a console.log" +
     " of the truncated value. If you right click and copy the value, you get the bit of the text and ellipses too :-) \nHere's a copy-paste of the truncated string:";
+
+  var dd = {name: longString}
 }
 
 function testFunctionScopes() {
@@ -81,6 +83,8 @@ try {
 }
 catch (e) {
 }
+
+testFunctionScopes();
 
 function paint() {
   function Animal(name) {
@@ -142,7 +146,7 @@ function paint() {
   })();
   console.log("effffffff");
   console.log("ew");
-  console.log("we");
+  console.log(simpleObject);
 }
 
 function testConsole() {
@@ -150,4 +154,8 @@ function testConsole() {
   console.log("da", "b");
   console.log("da", "b");
   console.log("q", "bd");
+  console.log("q", "bd");
+  for (var i = 0; i < 300; i++) {
+    console.log(5);
+  }
 }

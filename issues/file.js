@@ -1,5 +1,4 @@
-function test(name) {
-  var x = null; //BREAKPOINT
-  //var y = arguments; //Uncomment this line -> works as expected
+function testConsole() {
+  console.log("da", "b");
+  console.log("q", "bd");
 }
-test("NAME", "VALUE");

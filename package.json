@@ -1,0 +1,9 @@
+{
+  "name": "node-webkit menu demo",
+  "main": "testDebuggerPresentation.html",
+  "window": {
+    "position": "center",
+    "width": 500,
+    "height": 500
+  }
+}
