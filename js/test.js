@@ -17,6 +17,9 @@ function test() {
     return 3;
   }}});
   console.log(foo);
+
+  var _loggers = [];
+  _loggers["_buckets@0x23c35ea0"] = "wfwes";
 }
 
 function testSetValue() {
