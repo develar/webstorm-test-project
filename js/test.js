@@ -30,7 +30,7 @@ function testSetValue() {
       return foo;
     },
     set test(v) {
-      foo = 33;
+      foo = v;
     }
   };
 
