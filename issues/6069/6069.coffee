@@ -6,5 +6,4 @@ $ '#hello'
   text = "text #{a}"
   console.log("rrr");
 
-  alert("it works! #{[a, b]}")
-  # set the breakpoint here
+  alert("it works! #{[a, b]}") # set the breakpoint here
