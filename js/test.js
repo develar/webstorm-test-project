@@ -47,6 +47,10 @@ function testVariablesPresentation() {
     bigSparceArray[j] = Math.random();
   }
 
+  var arrayWithProperties = bigSparceArray.concat();
+  arrayWithProperties.foo = 34324;
+  arrayWithProperties.bar = 34324;
+
   var bigArray = new Array(10 * 1000 + 342);
   for (var i = 0; i < bigArray.length; i++) {
     bigArray[i] = "v";
@@ -59,10 +63,48 @@ function testVariablesPresentation() {
 
   map["dasd\ndfewf"] = 33;
 
+  var date = new Date();
+  var regExp = new RegExp();
+
   var longString = "This affects any Node.js project;\n it's not particular to Jade.  It makes debugging a real pain.  Only workaround I've found is to bring up the eval window and do a console.log" +
     " of the truncated value. If you right click and copy the value, you get the bit of the text and ellipses too :-) \nHere's a copy-paste of the truncated string:";
 
-  var dd = {name: longString}
+  var longStringHost = {name: longString};
+  console.log(longString);
+  console.warn(longString);
+  console.error(longString);
+
+  (function () {
+    "use strict";
+    var i, array = [];
+    for (i = 0; i < 100000; i += 1) {
+      array.push({ID: i});
+    }
+
+    console.log(array[0]);
+  }());
+
+  var tmp = {};
+  tmp.__defineGetter__('a', function() {return 24});
+
+  var o = {};
+  o.a;
+  Object.defineProperty(o, "a", {value: 37,
+    writable: true,
+    enumerable: true,
+    configurable: true});
+
+  var bValue = 38;
+  Object.defineProperty(o, "b", {
+    get: function () {
+      return bValue;
+    },
+    set: function (newValue) {
+      bValue = newValue;
+    },
+    enumerable: true,
+    configurable: true
+  });
 }
 
 function testFunctionScopes() {
@@ -87,70 +129,7 @@ try {
 catch (e) {
 }
 
-testFunctionScopes();
-
-function paint() {
-  function Animal(name) {
-    this.name = name
-    this.canWalk = true
-  }
-
-  var animal = new Animal("beastie")
-
-  function Rabbit(name) {
-    this.name = name
-  }
-
-  try {
-    throw new Error();
-  }
-  catch (e) {
-  }
-
-  Rabbit.prototype = animal
-
-  var big = new Rabbit('Big')
-  var small = new Rabbit('Small')
-
-  var outer = 234;
-  var re = /ab+c/;
-  var re2 = new RegExp("\\w+\\s", "g");
-  var reqwe2 = new RegExp("\\w+\\s", "g");
-  var array = [1, 2, 4, 6543, 23];
-  array[33] = "asds";
-  array[12] = "asds";
-  for (var j = 40; j < 2000; j++) {
-    array[j] = Math.random();
-  }
-
-  var f = "This affects any Node.js project; it's not particular to Jade.  It makes debugging a real pain.  Only workaround I've found is to bring up the eval window and do a console.log" +
-    " of the truncated value. If you right click and copy the value, you get the bit of the text and ellipses too :-) \nHere's a copy-paste of the truncated string:";
-
-
-  var simpleObject = {f: 12, s: new Date()};
-  (function () {
-    var so = 32;
-    (function () {
-      var a, x, y;
-      var r = 10;
-      with (Math) {
-        try {
-          throw new Error();
-        }
-        catch (e) {
-          a = PI * r * r;
-          x = r * cos(PI);
-          y = r * sin(PI / 2);
-          var inner = 33;
-          var g = inner + outer + so;
-        }
-      }
-    })();
-  })();
-  console.log("effffffff");
-  console.log("ew");
-  console.log(simpleObject);
-}
+testVariablesPresentation();
 
 function testConsole() {
   console.log("a", "b");

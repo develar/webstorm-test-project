@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="WebResourcesPaths">
+    <contentEntries>
+      <entry url="file://$APPLICATION_HOME_DIR$/plugins/JavaScriptDebugger/testData/variableViewTest">
+        <entryData>
+          <resourceRoots>
+            <path value="file://$APPLICATION_HOME_DIR$/plugins/JavaScriptDebugger/testData/variableViewTest" />
+          </resourceRoots>
+        </entryData>
+      </entry>
+    </contentEntries>
+  </component>
+</project>
+
