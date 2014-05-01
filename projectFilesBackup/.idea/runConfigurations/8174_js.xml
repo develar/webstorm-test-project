@@ -1,9 +1,0 @@
-<component name="ProjectRunConfigurationManager">
-  <configuration default="false" name="8174.js" type="NodeJSConfigurationType" factoryName="Node.js" singleton="true" path-to-node="/usr/local/bin/node" path-to-js-file="8174.js" node-parameters="--nolazy" working-dir="$PROJECT_DIR$/issues">
-    <RunnerSettings RunnerId="NodeJS.debug" />
-    <RunnerSettings RunnerId="NodeJS.run" />
-    <ConfigurationWrapper RunnerId="NodeJS.debug" />
-    <ConfigurationWrapper RunnerId="NodeJS.run" />
-    <method />
-  </configuration>
-</component>

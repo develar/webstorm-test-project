@@ -39,6 +39,12 @@ function testSetValue() {
 }
 
 function testVariablesPresentation() {
+  if (typeof Buffer !== 'undefined') {
+    var buffer = new Buffer(1000000);
+    //Put a breakpoint here:
+    var putBreakpointHere = true;
+  }
+
   var smallArray = [0, 1, 2];
   var bigSparceArray = [1, 2, 4, 6543, 23];
   bigSparceArray[33] = "asds";
