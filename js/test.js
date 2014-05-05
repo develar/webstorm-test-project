@@ -111,6 +111,15 @@ function testVariablesPresentation() {
     enumerable: true,
     configurable: true
   });
+
+  function Person() {
+  }
+
+  Person.prototype.sayHello = function () {
+    alert ('hello');
+  };
+
+  var person1 = new Person('Male');
 }
 
 function testFunctionScopes() {
