@@ -1,4 +1,8 @@
-function testConsole() {
-  console.log("da", "b");
-  console.log("q", "bd");
-}
+(function() {
+  var cnt = 1;
+
+  setInterval(function () {
+    console.log("#" + cnt + " Hello! from " + process.pid);
+    cnt++;
+  }, 2000);
+})();

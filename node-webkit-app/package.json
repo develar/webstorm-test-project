@@ -4,6 +4,7 @@
   "window": {
     "position": "center",
     "width": 500,
-    "height": 500
+    "height": 500,
+    "toolbar": true
   }
 }

@@ -93,7 +93,7 @@ function testVariablesPresentation() {
   var tmp = {};
   tmp.__defineGetter__('a', function() {return 24});
 
-  var o = {};
+  var o = {};,
   o.a;
   Object.defineProperty(o, "a", {value: 37,
     writable: true,
@@ -133,6 +133,17 @@ function testFunctionScopes() {
   var c = new Circle(10);
   var bar = 55;
   console.log(c.getRadiusSquared());
+
+
+
+    function Person() {
+    }
+
+    Person.prototype.sayHello = function () {
+        alert ('hello');
+    };
+
+    var person1 = new Person('Male');
  }
 
 try {
@@ -144,7 +155,7 @@ try {
 catch (e) {
 }
 
-testVariablesPresentation();
+testFunctionScopes();
 
 function testConsole() {
   console.log("a", "b");

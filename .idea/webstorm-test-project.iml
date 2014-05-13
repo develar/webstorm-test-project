@@ -1,6 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <module type="WEB_MODULE" version="4">
   <component name="NewModuleRootManager">
+    <content url="file://$APPLICATION_HOME_DIR$/plugins/JavaScriptDebugger/testApp">
+      <excludeFolder url="file://$APPLICATION_HOME_DIR$/plugins/JavaScriptDebugger/testApp/node_modules" />
+    </content>
     <content url="file://$APPLICATION_HOME_DIR$/plugins/JavaScriptDebugger/testData/variableViewTest" />
     <content url="file://$APPLICATION_HOME_DIR$/plugins/LiveEdit/testData" />
     <content url="file://$MODULE_DIR$">
@@ -23,6 +26,7 @@
     <orderEntry type="library" name="Node.js v0.11.10 Core Modules" level="application" />
     <orderEntry type="library" name="Node.js v0.10.26 Core Modules" level="application" />
     <orderEntry type="library" name="webstorm-test-project node_modules" level="project" />
+    <orderEntry type="library" name="testApp node_modules" level="project" />
   </component>
 </module>
 

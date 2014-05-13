@@ -9,6 +9,8 @@ function testMe() {
   }
   var fay = funca();
   var x = fay[2];
+
+  stepping();
 }
 
 testMe();
