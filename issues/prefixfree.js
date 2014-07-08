@@ -377,7 +377,7 @@ functions['repeating-radial-gradient'] =
 functions['radial-gradient'] =
 functions['linear-gradient'];
 
-// Note: The properties assigned are just to *test* support. 
+// Note: The properties assigned are just to *test* support.
 // The keywords will be prefixed everywhere.
 var keywords = {
 	'initial': 'color',

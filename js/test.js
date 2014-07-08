@@ -93,7 +93,7 @@ function testVariablesPresentation() {
   var tmp = {};
   tmp.__defineGetter__('a', function() {return 24});
 
-  var o = {};,
+  var o = {};
   o.a;
   Object.defineProperty(o, "a", {value: 37,
     writable: true,
@@ -158,7 +158,7 @@ catch (e) {
 testFunctionScopes();
 
 function testConsole() {
-  console.log("a", "b");
+  console.log("a", "ауцкак");
   console.log("da", "b");
   console.log("da", "b");
   console.log("q", "bd");

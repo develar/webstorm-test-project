@@ -7,6 +7,7 @@
       </sourceFilesUrls>
     </properties>
     <CLASSES>
+      <root url="file://$APPLICATION_HOME_DIR$/plugins/JavaScriptDebugger/testApp/testData/coffee/test.js" />
       <root url="file://$PROJECT_DIR$/issues/10829.js" />
       <root url="file://$PROJECT_DIR$/issues/6069/6069.js" />
     </CLASSES>

@@ -1,3 +1,5 @@
+var foo = 4;
+
 function get_random_color() {
   var letters = '0123456789ABCDEF'.split('');
   var color = '0x000000';
