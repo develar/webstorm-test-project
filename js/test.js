@@ -158,7 +158,7 @@ catch (e) {
 testFunctionScopes();
 
 function testConsole() {
-  console.log("a", "ауцкак");
+  console.log("a", "ауцкffак");
   console.log("da", "b");
   console.log("da", "b");
   console.log("q", "bd");

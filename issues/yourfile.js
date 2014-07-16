@@ -1,1 +1,1 @@
-GLOBAL.a = "frfr";
+GLOBAL.a = "dededeede";
