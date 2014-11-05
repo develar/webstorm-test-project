@@ -1,6 +1,7 @@
 {
   "name": "node-webkit menu demo",
-  "main": "../testDebuggerPresentation.html",
+  "node-main": "file.js",
+  "main": "main.html",
   "window": {
     "position": "center",
     "width": 500,

@@ -38,6 +38,14 @@ function testSetValue() {
   console.log(foo);
 }
 
+function testTypedArrayPresentation() {
+  // byteLength incorrectly reported
+  //var arrayBuffer = new ArrayBuffer(200 * 2222);
+
+  //var input = new Uint8Array(200 * 2222);
+  var dd = new Float32Array(200);
+}
+
 function testVariablesPresentation() {
   if (typeof Buffer !== 'undefined') {
     var buffer = new Buffer(1000000);
@@ -166,4 +174,5 @@ function testConsole() {
   for (var i = 0; i < 300; i++) {
     console.log(5);
   }
+  console.clear()
 }
